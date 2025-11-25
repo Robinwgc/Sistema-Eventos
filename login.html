@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sistema de Reservas - Login</title>
+<style>
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e6ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-container {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 50px;
+    width: 360px;
+    box-shadow: 0 0 20px rgba(67, 74, 166, 0.2);
+    text-align: center;
+  }
+  .logo {
+    background: #d4dbff;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo svg {
+    width: 40px;
+    height: 40px;
+    fill: #4252f4;
+  }
+  h1 {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    color: #2b2e4a;
+  }
+  p.subtitle {
+    margin: 0 0 25px 0;
+    color: #6e7191;
+    font-size: 0.9rem;
+  }
+  label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #4a4a4a;
+  }
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 38px 10px 12px;
+    border-radius: 6px;
+    border: 1.5px solid #d8d8d8;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #6b71f5;
+    box-shadow: 0 0 5px #a3a8f7;
+  }
+  /* iconos dentro de inputs */
+  .input-group .icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: #aaa;
+  }
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    color: #5c5c5c;
+  }
+  .checkbox-group input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+  }
+  button {
+    width: 100%;
+    background-color: #6370f4;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #4e57d4;
+  }
+  footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #a2a5bd;
+  }
+  footer strong {
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container" role="main" aria-label="Sistema de Reservas Panel Administrativo">
+  <div class="logo" aria-hidden="true">
+    <!-- Un icono genérico similar al que muestras -->
+    <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <rect x="12" y="12" width="40" height="40" rx="10" ry="10"/>
+      <circle cx="32" cy="32" r="14" fill="white"/>
+    </svg>
+  </div>
+  <h1>Sistema de Reservas</h1>
+  <p class="subtitle">Panel Administrativo</p>
+
+  <form>
+    <div class="input-group">
+      <label for="usuario">Usuario</label>
+      <input id="usuario" name="usuario" type="text" placeholder="Ingrese su usuario" autocomplete="username" required />
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3 0-9 1.5-9 4.5v2h18v-2c0-3-6-4.5-9-4.5z"/>
+      </svg>
+    </div>
+
+    <div class="input-group">
+      <label for="contrasena">Contraseña</label>
+      <input id="contrasena" name="contrasena" type="password" placeholder="Ingrese su contraseña" autocomplete="current-password" required />
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M17 8V7a5 5 0 0 0-10 0v1H6v12h12V8h-1zm-7-1a3 3 0 0 1 6 0v1H10V7zm7 11H7v-8h10v8z"/>
+      </svg>
+    </div>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="recordar" name="recordar" />
+      <label for="recordar">Recordar sesión</label>
+    </div>
+
+    <button type="submit">Iniciar Sesión</button>
+  </form>
+
+  <footer>
+    <p>© 2024 Sistema de Gestión de Eventos</p>
+    <p>Acceso solo para usuarios administrativos</p>
+  </footer>
+</div>
+
+</body>
+</html>
