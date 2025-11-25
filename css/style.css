@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+.header .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 50px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.logo-img {
+    height: 85px; 
+    width: auto;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem; 
+    color: #233044; 
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    font-weight: 700; 
+    margin-bottom: 2px;
+}
+
+.logo-text span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #929497; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 35px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.8rem; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #233044;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 10px; 
+}
+
+.hero {
+    height: 100vh; 
+    background-image: url('../images/fondo-hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 400; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+
+.btn-whatsapp {
+    background-color: #25D366; 
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px; 
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebc57;
+    transform: scale(1.05);
+}
